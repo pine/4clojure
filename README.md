@@ -1,14 +1,7 @@
-# test
+4clojure
+--------
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+プログラミング言語 Clojure を勉強するためのサイト [4clojure](https://www.4clojure.com) の解答を載せているリポジトリです。
 
 ## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Public Domain
