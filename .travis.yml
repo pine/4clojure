@@ -1,0 +1,2 @@
+laungage: clojure
+script: lein run
