@@ -1,11 +1,16 @@
 (ns test_runner.core
   (:use [clojure.stacktrace]))
 
+; ソースファイルのみをフィルタする
+(defn- src-filter [file]
+  (->> file (.getName) (re-matches #"\d+.clj")))
+
 ; テスト対象のソースファイル一覧を取得
 (defn- src-files []
   (let [dirs (clojure.java.io/file "src/4clojure")
         files (file-seq dirs)]
-    (filter #(->> % (.getName) (re-matches #"\d+.clj")) files)
+    (let [matched-files (filter src-filter files)]
+      (sort #(compare (.getName %1) (.getName %2)) matched-files))
   ))
 
 ; ソースファイルをテストする
