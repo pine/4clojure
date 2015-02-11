@@ -1,4 +1,4 @@
-; https://www.4clojure.com/problem/４5
+; https://www.4clojure.com/problem/45
 
 (def ^:private s [1 4 7 10 13])
 
