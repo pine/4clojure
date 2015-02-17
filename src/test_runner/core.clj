@@ -5,7 +5,7 @@
 (defn fname [file] (.getName file))
 
 ; ソースファイルのみをフィルタする
-(defn- src-filter [file]
+(defn src-filter [file]
   (->> file fname (re-matches #"\d+.clj")))
 
 ; テスト対象のソースファイル一覧を取得

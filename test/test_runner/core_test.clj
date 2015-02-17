@@ -5,4 +5,8 @@
 
 (deftest test_runner-test
   (testing "should get filename"
-    (is (= (fname (new File "filename")) "filename"))))
+    (is (= (fname (new File "filename")) "filename")))
+  
+  (testing "should filter test \\d+.clj file"
+    (is (src-filter (new File "001.clj")))
+    (is (not (src-filter (new File "xxx.clj"))))))
