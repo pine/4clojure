@@ -1,6 +1,7 @@
 4clojure
 --------
 [![Build Status](https://travis-ci.org/pine613/4clojure.svg?branch=master)](https://travis-ci.org/pine613/4clojure)
+[![Dependencies Status](http://jarkeeper.com/pine613/4clojure/status.png)](http://jarkeeper.com/pine613/4clojure)
 
 プログラミング言語 Clojure を勉強するためのサイト [4clojure](https://www.4clojure.com) の解答を載せているリポジトリです。
 
